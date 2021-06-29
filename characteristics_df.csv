@@ -1,4 +1,4 @@
-,BreedName,Group1,Group2,MaleWtKg,Temperment,AvgPupPrice,Intelligence,Watchdog,breed_rank
+,BreedName,show_groups,subcategories,weight,Temperament,Average_Price,Intelligence,watchdog,breed_rank
 0,Affenpinscher,Toy,Companion,4.0,"Active, Adventurous, Curious, Fun-loving, Playful, Stubborn",1000.0,37.0,1.0,147
 1,Afghan Hound,Sporting,Sight,28.0,"Aloof, Clownish, Dignified, Happy, Independent",2250.0,79.0,1.0,93
 3,Airedale Terrier,Terrier,Terrier,26.0,"Alert, Confident, Courageous, Friendly, Intelligent, Outgoing",700.0,29.0,4.0,55
