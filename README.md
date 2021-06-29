@@ -8,7 +8,6 @@
 		
 - [Tricia Toffey](https://github.com/ttoffey)
 
-- [Elise Eng](https://github.com/)
 
 ## Brief Description:
 
@@ -38,6 +37,11 @@ In a set area, how many people own the breeds we would expect?
 4. Merge collected from kaggle into postgres database
 5. Create queries
 
+### Data Sources:
+- [American Kennel Club](https://www.akc.org/most-popular-breeds/2017-full-list/)
+- Dog characteristics
+- NYC Dog data base
+
 
 
 
@@ -45,6 +49,7 @@ In a set area, how many people own the breeds we would expect?
 - [Click here for website used](https://www.akc.org/most-popular-breeds/2017-full-list/)
 - Used Beautiful soup and splinter to scrape table data 
 - Cleaned up by renaming column names and resetting index to breed_id
+- Remove 's' from Dog breeds to make it singular
 
 - Click [Here](https://github.com/anikraze/no_dog_etl/blob/main/dog_breed_etl.ipynb) to see full steps
 
@@ -52,6 +57,16 @@ In a set area, how many people own the breeds we would expect?
 ![image](https://user-images.githubusercontent.com/81592631/123521815-0ce20480-d687-11eb-8fbb-5ac5e058ba9c.png)
 
 ## Step 2 Cleaning data sources from Kaggle:
+- Dog Characteristics Data Base:
+	-This database consists of Breed_name, characteristics, weight, Price etc.
+	- Remove unecessary columns ex:("AltBreedName", "MalaysiaGuardedDog",etc.)
+	- Dropped any rows with missing data
+	- Remove duplicates
+	- Rename columns to appropriate names
+- NYC Dog Data Base:	
+	-This data base consists of NYC dog license, zip_code. borough, breed_name etc.
+	- Remove unecessary columns ex:(""CommunityDistrict","CensusTract2010",etc.)
+	- Dropped any rows with "Unknown" or missing values
 
 
 
