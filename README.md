@@ -12,9 +12,13 @@
 
 ## Brief Description:
 
-add description here
+The intent of this database is to help shelters to place dogs based on breed characteristics. By breaking down the most popular breeds and their standardized breed behavior, it helps shelters to make suggestions as to which dog may best suit the personality of a potential adopter. The database should help to answer:
 
-add questions to be answered here
+Which dog breeds are the most popular?
+
+What are the most common personality traits within those breeds?
+
+In a set area, how many people own the breeds we would expect?
 
 
 
