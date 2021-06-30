@@ -41,7 +41,7 @@ Disclaimer: PGAdmin password is needed.
 ### Data Sources:
 - [American Kennel Club](https://www.akc.org/most-popular-breeds/2017-full-list/)
 - Dog characteristics
-- NYC Dog data base
+- NYC Dog dataset
 
 
 
@@ -50,7 +50,6 @@ Disclaimer: PGAdmin password is needed.
 - [Click here for website used](https://www.akc.org/most-popular-breeds/2017-full-list/)
 - Used Beautiful soup and splinter to scrape table data 
 - Cleaned up by renaming column names and resetting index to breed_id
-- Remove 's' from Dog breeds to make it singular
 
 - Click [Here](https://github.com/anikraze/no_dog_etl/blob/main/dog_breed_etl.ipynb) to see full steps
 
