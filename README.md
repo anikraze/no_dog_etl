@@ -109,6 +109,10 @@ Example:
 
 ## Creating a QuickDBD Flow chart:
 
+
+
+## Schemas
+
 Created the schema for 3 tables - akc_table, nyc_data_table and characteristics_table; 
 the akc_table and characteristics_table were joined via breed_rank; 
 we were not able join the nyc_table via a foreign key but did use in SQL queries - the "breed names" are not consistent in all three tables.
@@ -143,6 +147,7 @@ Sample Queries:
 
 
 - Selects all Shih Tzu's by NY borough with average price.
+		
 		select n.breed_name, n.borough, c.average_price
 		from characteristics as c
 		left join nyc_table as n
