@@ -108,8 +108,35 @@ Example:
 
 ## Creating a QuickDBD Flow chart:
 
+Created the schema for 3 tables - akc_table, nyc_data_table and characteristics_table; 
+the akc_table and characteristics_table were joined via breed_rank; 
+we were not able join the nyc_table via a foreign key but did use in SQL queries - the "breed names" are not consistent in all three tables.
+
+We uploaded the QuickDBD to PGAdmin to create the tables and then uploaded the data.
+
+Sample Queries:
+
+select a.breed_rank, c.breed_name, c.average_price
+from akc_table as a
+left join characteristics as c
+on a.breed_rank = c.breed_rank
+where a.breed_rank <= 5 AND c.average_price < 2000
+order by a.breed_rank;
+
+![image](https://user-images.githubusercontent.com/67808647/123884854-349ccb00-d91a-11eb-84d3-f89e2c0deda4.png)
 
 
+
+select c.breed_name, c.breed_rank, n.borough
+from characteristics as c
+left join nyc_table as n
+on c.breed_name = n.breed_name
+where c.breed_rank <= 5
+order by n.borough, c.breed_rank;
+
+![image](https://user-images.githubusercontent.com/67808647/123884929-60b84c00-d91a-11eb-8f06-e8cc552b0208.png)
+![image](https://user-images.githubusercontent.com/67808647/123884996-834a6500-d91a-11eb-84f0-647449a22467.png)
+![image](https://user-images.githubusercontent.com/67808647/123885025-8f362700-d91a-11eb-834b-2481b4655b75.png)
 
 
 
