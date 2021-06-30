@@ -74,7 +74,37 @@ In a set area, how many people own the breeds we would expect?
 
 
 ## Step 3 Sample queries for finding dog breed options :
--
+- First create a table schema on pgAdmin for AKC web scrape
+		
+		Create table dog_breds_akc(
+			breed_id  INT,
+			breed  VARCHAR,
+			breed_rank INT
+			);
+			
+
+
+Selects the top 5 breeds accoring to 2017 AKC:
+			
+		select * from dog_breds_akc
+		select * from dog_breds_akc
+		where breed_rank <= 5;
+Look up any dog breed to see if it is top ranked:
+		
+		select * from dog_breeds_akc
+		where breed = ['insert breed name']
+		
+Example:
+		
+		select * from dog_breds_akc
+		where breed = 'Shih Tzu'
+		
+
+
+![image](https://user-images.githubusercontent.com/81592631/123883359-db7f6800-d916-11eb-81a9-d89283cedb56.png)
+
+
+
 
 ## Creating a QuickDBD Flow chart:
 
