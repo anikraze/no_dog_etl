@@ -20,7 +20,7 @@ What are the most common personality traits within those breeds?
 
 In a set area, how many people own the breeds we would expect?
 
-
+Disclaimer: PGAdmin password is needed.
 
 ### Technologies used:
 1. Python
@@ -109,6 +109,7 @@ Example:
 
 ## Creating a QuickDBD Flow chart:
 
+![db_diagram](https://user-images.githubusercontent.com/67808647/123886692-028d6800-d91e-11eb-9568-3ca9ac3d1deb.png)
 
 
 ## Schemas
