@@ -11,7 +11,7 @@
 
 ## Brief Description:
 
-The intent of this database is to help shelters to place dogs based on breed characteristics. By breaking down the most popular breeds and their standardized breed behavior, it helps shelters to make suggestions as to which dog may best suit the personality of a potential adopter. The database should help to answer:
+The intent of this database is to help shelters to place dogs based on breed characteristics. By breaking down the most popular breeds and their standardized breed behavior, it helps shelters to make suggestions as to which dog may best suit the personality and lifestyle of a potential adopter. The database should help to answer:
 
 Which dog breeds are the most popular?
 
@@ -22,7 +22,7 @@ In a set area, how many people own the breeds we would expect?
 
 
 ### Technologies used:
-1. Pyhton
+1. Python
 2. Pandas
 3. Splinter
 4. Beautiful Soup
@@ -65,8 +65,11 @@ In a set area, how many people own the breeds we would expect?
 	- Rename columns to appropriate names
 - NYC Dog Data Base:	
 	-This data base consists of NYC dog license, zip_code. borough, breed_name etc.
-	- Remove unecessary columns ex:(""CommunityDistrict","CensusTract2010",etc.)
+	- Uploaded NYC_dogs_clean.csv from Kaggle
+	- Removed unecessary columns ex:("Unnamed: 0", "CommunityDistrict", "CensusTract2010", etc.)
 	- Dropped any rows with "Unknown" or missing values
+	- Renamed columns "AnimalName" and "AnimalGender" to "Name" and "Gender"
+	- Exported to .csv
 
 
 
