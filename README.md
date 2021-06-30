@@ -8,6 +8,7 @@
 		
 - [Tricia Toffey](https://github.com/ttoffey)
 
+![image](https://user-images.githubusercontent.com/76538768/123885840-47b09a80-d91c-11eb-8afd-701558b58d83.png)
 
 ## Brief Description:
 
