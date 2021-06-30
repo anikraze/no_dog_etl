@@ -142,6 +142,14 @@ Sample Queries:
 ![image](https://user-images.githubusercontent.com/67808647/123884996-834a6500-d91a-11eb-84f0-647449a22467.png)
 
 
-
+- Selects all Shih Tzu's by NY borough with average price.
+		select n.breed_name, n.borough, c.average_price
+		from characteristics as c
+		left join nyc_table as n
+		on c.breed_name = n.breed_name
+		where c.breed_name = 'Shih Tzu';
+		
+![image](https://user-images.githubusercontent.com/67808647/123886278-1d131180-d91d-11eb-9334-7bd88fbadaae.png)
+	
 
 
