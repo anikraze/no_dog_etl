@@ -135,16 +135,14 @@ Sample Queries:
 
 - Selects breed_name, breed_rank and NYC borough for top 5 breed ranks according to AKC by NYC borough:
 
-		select c.breed_name, c.breed_rank, n.borough
-		from characteristics as c
-		left join nyc_table as n
-		on c.breed_name = n.breed_name
-		where c.breed_rank <= 5
-		order by n.borough, c.breed_rank;
-
-![image](https://user-images.githubusercontent.com/67808647/123884929-60b84c00-d91a-11eb-8f06-e8cc552b0208.png)
-![image](https://user-images.githubusercontent.com/67808647/123884996-834a6500-d91a-11eb-84f0-647449a22467.png)
-
+		select c.breed_rank, n.breed_name, n.borough, count(n.breed_name)
+		from nyc_table as n
+		left join characteristics as c
+		on n.breed_name = c.breed_name
+		group by c.breed_rank, n.borough, n.breed_name
+		order by c.breed_rank;
+		
+![image](https://user-images.githubusercontent.com/76538768/124052155-e0fab200-d9eb-11eb-8036-69be7380816a.png)
 
 - Selects all Shih Tzu's by NY borough with average price.
 		
